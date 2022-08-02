@@ -19,7 +19,7 @@ public class EnemyBase : MonoBehaviour
 	// ターゲットのセット
 	protected void TargetSet()
 	{
-		targetPos = GameObject.Find("Wall").transform.position;
+		targetPos = GameObject.FindWithTag("Wall").transform.position;
 	}
 
 	// 移動処理
@@ -27,12 +27,10 @@ public class EnemyBase : MonoBehaviour
 	{
 		float length = Vector3.Distance(targetPos, transform.position);
 		// 一定距離より遠かったら移動してくる
-		if (length > targetNearLength)
-		{
-			Vector3 dir = transform.position - targetPos;
-			dir = dir.normalized;
-			transform.position += (dir * moveSpeed * Time.deltaTime);
-		}
+		if (length < targetNearLength) return;
+		Vector3 dir = targetPos - transform.position;
+		dir = dir.normalized;
+		transform.position += (dir * moveSpeed * Time.deltaTime);
 	}
 
 }

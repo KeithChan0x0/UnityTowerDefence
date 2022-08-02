@@ -15,6 +15,7 @@ public class EnemyGround : EnemyBase
 		TargetSet();
 		// ある程度基準距離からずらす
 		targetNearLength = TARGET_LENGTH_STANDARD;
+		moveSpeed = 3.0f;
 	}
 
 	void Attack()
