@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ChinTestScene.unity
+    guid: e319ed5bedc69aa4c918f4ffe2c1fafd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0278aefa427deed40a561a32e289f00e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: eabe0fa3aea204f489458ed0923d2ff0, type: 2}
