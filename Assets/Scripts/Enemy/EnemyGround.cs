@@ -13,20 +13,14 @@ public class EnemyGround : EnemyBase
 	void Start()
     {
 		TargetSet();
-		// ある程度基準距離からずらす
 		targetNearLength = TARGET_LENGTH_STANDARD;
-		moveSpeed = 3.0f;
 	}
 
-	void Attack()
-	{
-
-	}
-
+	
 	// Update is called once per frame
 	void Update()
     {
-		CharacterMove();
+		Move();
 		// 攻撃処理
 	}
 }
