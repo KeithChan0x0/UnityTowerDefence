@@ -9,7 +9,7 @@ public class EnemyBase : MonoBehaviour
 	// 体力
 	public int hp;
 	// 移動速度
-	protected float moveSpeed;
+	public float moveSpeed;
 	// ターゲットの座標
 	protected Vector3 targetPos;
 	// 実際のターゲットとの距離（これ以上は近づかないって範囲）
@@ -19,37 +19,44 @@ public class EnemyBase : MonoBehaviour
 	// ターゲットのセット
 	protected void TargetSet()
 	{
-		targetPos.x = GameObject.FindWithTag("Wall").transform.position.x;
+		targetPos = GameObject.FindWithTag("Wall").transform.position;
+		// 後でサイズ分X方向にランダムに調整する
+		// 近づく距離は派生先で作ってやる（定数だとかなんだとか、多分近距離と遠距離で変えるぐらいなので仮）
 	}
 
-	// 移動処理
-	protected void CharacterMove()
+	// 接触処理
+	void OnTriggerEnter(Collider other)
 	{
-		float length = 0.0f;
-#if false
-		length = Vector3.Distance(targetPos, transform.position);
-#else
+		// ダメージ値の取得（何が入ってきたかなどを確かめなならんけどタグすらないのでいったん仮）
+		// タグ、ゲッターができたら少し調整して終了
+		int damagePoint = 50;
+		Damage(damagePoint);
+	}
+
+	// ダメージ処理
+	void Damage(int point_)
+    {
+		hp -= point_;
+		// あとはダメージのアニメーションのセットをアニメーターにダメージとかを持たせるのでそれ依存で
+    }
+
+	// 移動処理
+	protected virtual void Move()
+	{
+		// Y座標抜きの距離を確かめる
 		Vector3 target = targetPos;
 		target.y = 0.0f;
-		target.z = 0.0f;
 		Vector3 pos = transform.position;
 		pos.y = 0.0f;
-		pos.z = 0.0f;
-		length = Vector3.Distance(target, pos);
-#endif
-		// 一定距離より遠かったら移動してくる
+		float length = Vector3.Distance(target, pos);
+		// 距離が一定距離より遠かったら移動してくる
 		if (length < targetNearLength) return;
-#if false
-		Vector3 dir = targetPos - transform.position;
+		// 移動に使う方向もY座標抜き
+		Vector3 dir = target - pos;
 		dir = dir.normalized;
 		transform.position += (dir * moveSpeed * Time.deltaTime);
-#else
-		Vector3 dir = targetPos - transform.position;
-		dir.y = 0.0f;
-		dir.z = 0.0f;
-		dir.x = dir.normalized.x;
-		transform.position += (dir * moveSpeed * Time.deltaTime);
-#endif
+		// 近接敵の場合は攻撃距離までの移動をしてやらなきゃならんけどその辺は近接タイプの移動を作ってやる
+		// これはもう面倒なので派生先に任せる
 	}
 
 }

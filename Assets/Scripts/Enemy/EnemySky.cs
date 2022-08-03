@@ -26,7 +26,7 @@ public class EnemySky : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        CharacterMove();
+		Move();
 		float length = 0.0f;
 		Vector3 target = targetPos;
 		target.y = 0.0f;
