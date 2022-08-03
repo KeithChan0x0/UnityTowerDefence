@@ -41,8 +41,8 @@ public class GunAction : MonoBehaviour
 	// エフェクト
 	public GameObject muzzleFlash;
 
+	public bool allowInvoke = true;
 
-	bool allowInvoke = true;
 	private void Awake()
 	{
 		bulletsLeft = magazineSize;
@@ -93,6 +93,8 @@ public class GunAction : MonoBehaviour
 
 	void Shoot()
 	{
+		readyToShoot = false;
+
 		// 当たりレイを作る
 		Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //　今カメラ画面の中心から
 		RaycastHit hit;
@@ -102,7 +104,7 @@ public class GunAction : MonoBehaviour
 		if (Physics.Raycast(ray, out hit))
 			targetPoint = hit.point;
 		else
-			targetPoint = ray.GetPoint(75); //Just a point far away from the player
+			targetPoint = ray.GetPoint(75); // 適当に前向きの座標
 
 		// 攻撃座標から当たった座標のベクトル
 		Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
@@ -121,7 +123,7 @@ public class GunAction : MonoBehaviour
 		currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
 		currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
 
-		//Instantiate muzzle flash, if you have one
+		// 弾を発射のエフェクト
 		if (muzzleFlash != null)
 			Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
@@ -134,8 +136,11 @@ public class GunAction : MonoBehaviour
 			Invoke("ResetShot", timeBetweenShooting);
 			allowInvoke = false;
 
-			//Add recoil to player (should only be called once)
-			//playerRb.AddForce(-directionWithSpread.normalized * recoilForce, ForceMode.Impulse);
+			// 反動
+			if (playerRb)
+			{
+				playerRb.AddForce(-directionWithSpread.normalized * recoilForce, ForceMode.Impulse);
+			}
 		}
 
 		//if more than one bulletsPerTap make sure to repeat shoot function
@@ -147,7 +152,7 @@ public class GunAction : MonoBehaviour
 
 	private void ResetShot()
 	{
-		//Allow shooting and invoking again
+		// Allow shooting and invoking again
 		readyToShoot = true;
 		allowInvoke = true;
 	}
@@ -155,11 +160,12 @@ public class GunAction : MonoBehaviour
 	private void Reload()
 	{
 		reloading = true;
-		Invoke("ReloadFinished", reloadTime); //Invoke ReloadFinished function with your reloadTime as delay
+		Invoke("ReloadFinished", reloadTime); // Reload時間
 	}
+
 	private void ReloadFinished()
 	{
-		//Fill magazine
+		// 弾リセット
 		bulletsLeft = magazineSize;
 		reloading = false;
 	}
