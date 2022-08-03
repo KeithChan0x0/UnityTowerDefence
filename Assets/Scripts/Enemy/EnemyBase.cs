@@ -17,11 +17,14 @@ public class EnemyBase : MonoBehaviour
 
 
 	// ターゲットのセット
-	protected void TargetSet()
+	protected void TargetSet(float lemgthStandard_, float lengthAround_)
 	{
+		// ターゲットの座標とどれだけターゲットに近づくかをもらう
+		// 座標の誤差は狙うものの大きさできまるので引数以外から
 		targetPos = GameObject.FindWithTag("Wall").transform.position;
-		// 後でサイズ分X方向にランダムに調整する
-		// 近づく距離は派生先で作ってやる（定数だとかなんだとか、多分近距離と遠距離で変えるぐらいなので仮）
+		// 距離はそれぞれ基準とどれだけ前後するかをもらったものを使って計算
+		targetNearLength = Random.Range(lemgthStandard_ - lengthAround_,
+										lemgthStandard_ + lengthAround_);
 	}
 
 	// 接触処理
