@@ -23,10 +23,14 @@ public class EnemyBase : MonoBehaviour
 		// 座標の誤差は狙うものの大きさできまるので引数以外から
 		// 狙うもののタグか座標渡して
 		// 複数あるなら編集しといて
-		targetPos = GameObject.FindWithTag("Wall").transform.position;
-		// 距離はそれぞれ基準とどれだけ前後するかをもらったものを使って計算
-		targetNearLength = Random.Range(lemgthStandard_ - lengthAround_,
-										lemgthStandard_ + lengthAround_);
+		GameObject Wall = GameObject.FindWithTag("Wall");
+		if (Wall)
+		{
+			targetPos = GameObject.FindWithTag("Wall").transform.position;
+			// 距離はそれぞれ基準とどれだけ前後するかをもらったものを使って計算
+			targetNearLength = Random.Range(lemgthStandard_ - lengthAround_,
+											lemgthStandard_ + lengthAround_);
+		}
 	}
 
 	// 接触処理
@@ -41,10 +45,10 @@ public class EnemyBase : MonoBehaviour
 
 	// ダメージ処理
 	void Damage(int point_)
-    {
+	{
 		hp -= point_;
 		// あとはダメージのアニメーションのセットをアニメーターにダメージとかを持たせるのでそれ依存で
-    }
+	}
 
 	// 移動処理
 	protected virtual void Move()
