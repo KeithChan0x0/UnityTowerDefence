@@ -33,21 +33,23 @@ public class EnemyBase : MonoBehaviour
 		}
 	}
 
-	// 接触処理
-	void OnTriggerEnter(Collider other)
-	{
-		// ダメージ値の取得（何が入ってきたかなどを確かめなならんけどタグすらないのでいったん仮）
-		// タグ、ゲッターができたら少し調整して終了
-		if (other.gameObject.tag != "Arrow") return;
-		int damagePoint = 50;
-		Damage(damagePoint);
-	}
-
 	// ダメージ処理
-	void Damage(int point_)
+	public virtual void Damage(int point_)
 	{
 		hp -= point_;
-		// あとはダメージのアニメーションのセットをアニメーターにダメージとかを持たせるのでそれ依存で
+	}
+
+	// 移動量の計算
+	protected Vector3 MoveValueCalc()
+	{
+		// Y座標抜きの距離を確かめる
+		Vector3 target = targetPos;
+		target.y = 0.0f;
+		Vector3 pos = transform.position;
+		pos.y = 0.0f;
+		// 移動に使う方向もY座標抜き
+		Vector3 dir = target - pos;
+		return dir;
 	}
 
 	// 移動処理
@@ -62,11 +64,9 @@ public class EnemyBase : MonoBehaviour
 		// 距離が一定距離より遠かったら移動してくる
 		if (length < targetNearLength) return;
 		// 移動に使う方向もY座標抜き
-		Vector3 dir = target - pos;
+		Vector3 dir = MoveValueCalc();
 		dir = dir.normalized;
 		transform.position += (dir * moveSpeed * Time.deltaTime);
-		// 近接敵の場合は攻撃距離までの移動をしてやらなきゃならんけどその辺は近接タイプの移動を作ってやる
-		// これはもう面倒なので派生先に任せる
 	}
 
 }

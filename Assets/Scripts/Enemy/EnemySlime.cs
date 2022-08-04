@@ -16,6 +16,13 @@ public class EnemySlime : EnemyGround
 
 	}
 
+	// ダメージ処理
+	public override void Damage(int point_)
+	{
+		base.Damage(point_);
+		//animator.SetBool("Damage", true);
+	}
+
 	// Update is called once per frame
 	public override void Update()
     {
