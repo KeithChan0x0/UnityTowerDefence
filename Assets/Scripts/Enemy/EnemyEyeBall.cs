@@ -8,8 +8,8 @@ public class EnemyEyeBall : EnemySky
 	const float TARGET_LENGTH_STANDARD = 10.0f;
 	// ターゲットとの距離で前後する範囲
 	const float TARGET_LENGTH_AROUND = 3.0f;
+	// アニメーター
 	Animator animator;
-	
 
 	// Start is called before the first frame update
 	void Start()
@@ -30,12 +30,19 @@ public class EnemyEyeBall : EnemySky
 	public override void Damage(int point_)
 	{
 		base.Damage(point_);
-		animator.SetBool( "Damage", true);
+		if (hp > 0)
+		{
+			animator.SetBool( "Damage", true);
+		}
+		else
+		{
+			animator.SetBool( "Death", true);
+		}
 	}
 
 	// Update is called once per frame
 	public override void Update()
     {
-		Move();
+		base.Update();
 	}
 }

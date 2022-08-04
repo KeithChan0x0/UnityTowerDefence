@@ -12,6 +12,6 @@ public class EnemySky : EnemyBase
 	// Update is called once per frame
 	public virtual void Update()
     {
-		
+		Move();
     }
 }

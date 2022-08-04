@@ -14,6 +14,5 @@ public class EnemyGround : EnemyBase
 	public virtual void Update()
     {
 		Move();
-		// 攻撃処理
 	}
 }
