@@ -32,6 +32,7 @@ public class EnemyBase : MonoBehaviour
 	{
 		// ダメージ値の取得（何が入ってきたかなどを確かめなならんけどタグすらないのでいったん仮）
 		// タグ、ゲッターができたら少し調整して終了
+		if (other.gameObject.tag != "Arrow") return;
 		int damagePoint = 50;
 		Damage(damagePoint);
 	}

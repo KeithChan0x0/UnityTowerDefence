@@ -12,8 +12,9 @@ public class EnemySlime : EnemyGround
 	// Start is called before the first frame update
 	void Start()
     {
-        
-    }
+		TargetSet(TARGET_LENGTH_STANDARD, TARGET_LENGTH_AROUND);
+
+	}
 
 	// Update is called once per frame
 	public override void Update()
