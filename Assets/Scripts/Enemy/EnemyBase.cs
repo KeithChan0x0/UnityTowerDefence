@@ -21,6 +21,8 @@ public class EnemyBase : MonoBehaviour
 	{
 		// ターゲットの座標とどれだけターゲットに近づくかをもらう
 		// 座標の誤差は狙うものの大きさできまるので引数以外から
+		// 狙うもののタグか座標渡して
+		// 複数あるなら編集しといて
 		targetPos = GameObject.FindWithTag("Wall").transform.position;
 		// 距離はそれぞれ基準とどれだけ前後するかをもらったものを使って計算
 		targetNearLength = Random.Range(lemgthStandard_ - lengthAround_,
