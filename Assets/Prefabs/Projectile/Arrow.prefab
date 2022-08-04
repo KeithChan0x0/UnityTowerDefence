@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3294807912532612007}
   - component: {fileID: 2123775529296251268}
   - component: {fileID: 8334492851659821403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arrow
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2428326935268603674}
   - component: {fileID: 5511321247590603378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MoveTrack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7869655869408365119}
   - component: {fileID: 862226422558707946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

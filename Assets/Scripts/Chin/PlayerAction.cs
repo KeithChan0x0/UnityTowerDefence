@@ -51,11 +51,7 @@ public class PlayerAction : MonoBehaviour
 	void HandleShooting()
 	{
 		
-#if UNITY_EDITOR
-		gunAction.HandleInput();
-#else
 
-#endif
 	}
 
 	void HandleMovement()
@@ -64,6 +60,6 @@ public class PlayerAction : MonoBehaviour
 
 		Vector3 moveDirection = Camera.main.transform.forward * moveInputAxis.y + Camera.main.transform.right * moveInputAxis.x;
 		moveDirection.y = 0;
-		transform.position += moveDirection * speed * Time.deltaTime;
+		transform.position += moveDirection * speed * Time.fixedDeltaTime;
 	}
 }
