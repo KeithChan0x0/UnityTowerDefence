@@ -58,21 +58,28 @@ public class GunAction : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		HandleInput();
+		//HandleInput();
 	}
 
-	void HandleInput()
+	public void HandleInput()
 	{
 		// ボタンを押している状態なら、連射する
 		if (allowButtonHold)
 		{
+#if UNITY_EDITOR
 			shooting = Input.GetKey(KeyCode.Mouse0);
+#else
+			shooting = OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0;
+#endif
 		}
 		else
 		{
+#if UNITY_EDITOR
 			shooting = Input.GetKeyDown(KeyCode.Mouse0);
+#else
+			shooting = OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0;
+#endif
 		}
-
 		//　弾をリロード 
 		if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
 			Reload();
@@ -91,7 +98,7 @@ public class GunAction : MonoBehaviour
 		}
 	}
 
-	void Shoot()
+	public void Shoot()
 	{
 		readyToShoot = false;
 
