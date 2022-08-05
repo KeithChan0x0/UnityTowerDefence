@@ -30,6 +30,8 @@ public class EnemySlime : EnemyGround
 		{
 			animator.SetBool("Death", true);
 		}
+
+		Debug.Log("Called");
 	}
 
 	// Update is called once per frame
