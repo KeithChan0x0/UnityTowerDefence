@@ -60,7 +60,6 @@ public class GunAction : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		//HandleInput();
 	}
 
 	public void HandleInput()
@@ -156,8 +155,6 @@ public class GunAction : MonoBehaviour
 		//if more than one bulletsPerTap make sure to repeat shoot function
 		if (bulletsShot < bulletsPerTap && bulletsLeft > 0)
 			Invoke("Shoot", timeBetweenShots);
-
-
 	}
 
 	private void ResetShot()
