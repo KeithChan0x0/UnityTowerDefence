@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2712495181672298058}
   - component: {fileID: 2712495181672298053}
   - component: {fileID: 3294807912532612007}
-  - component: {fileID: 2123775529296251268}
-  - component: {fileID: 8334492851659821403}
+  - component: {fileID: 504631687}
+  - component: {fileID: 9123743295874138240}
   m_Layer: 8
   m_Name: Arrow
   m_TagString: Projectile
@@ -104,22 +104,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!136 &2123775529296251268
-CapsuleCollider:
+--- !u!114 &504631687
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2712495181672298052}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 0.14
-  m_Height: 0.8
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.4}
---- !u!65 &8334492851659821403
-BoxCollider:
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c106481578a7dd4d82f4eb6455da968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: Enemy
+--- !u!135 &9123743295874138240
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,8 +128,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.02, z: 0.62}
-  m_Center: {x: 0, y: 0, z: 0.31}
+  m_Radius: 0.02
+  m_Center: {x: 0, y: 0, z: 0.65}
 --- !u!1 &2842419342401280918
 GameObject:
   m_ObjectHideFlags: 0

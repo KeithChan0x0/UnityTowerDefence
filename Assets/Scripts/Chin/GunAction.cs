@@ -52,7 +52,9 @@ public class GunAction : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-
+#if UNITY_EDITOR
+		transform.localPosition = new Vector3(0.0f, -0.5f, 0.0f);
+#endif
 	}
 
 	// Update is called once per frame
