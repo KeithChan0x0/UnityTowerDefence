@@ -14,7 +14,11 @@ public class GameManager : MonoBehaviour
 		RANKING,	// ランキング
 	}
 
-	MODE GameMode; //ゲームの状態
+	//-------------------------------------------
+	// システム関係
+	//-------------------------------------------
+	public Text txtMessage;     // システムメッセージ
+	MODE GameMode;				//ゲームの状態
 
 	//-------------------------------------------
 	// 音関係
@@ -23,17 +27,6 @@ public class GameManager : MonoBehaviour
 	public AudioClip Music_Title;		// タイトル画面のBGM
 	public AudioClip SE_sceneChange;	// シーンを移行した際のSE
 	AudioSource myAudio;				// 自身の音源
-
-	//-------------------------------------------
-	// システム関係
-	//-------------------------------------------
-	public Text txtMessage;         // システムメッセージ
-	Image imgFill;					//自身のフィル画像
-	Image imgButton;				//自身の配下のボタン画像
-	GameObject Manager;				//マネージャー
-	float Elapsed = 0.0f;			//経過時間
-	bool Selected = false;			//選択完了の真偽値
-	public Sprite imgUnlock;		//アンロック画像
 
 	//-------------------------------------------
 	// スコア関係
@@ -45,9 +38,9 @@ public class GameManager : MonoBehaviour
 	//-------------------------------------------
 	// 時間関係
 	//-------------------------------------------
-	public Text txtTime;	// テキスト
-	public int maxTime;		// 最大時間
-	private int time;       // 現在の時間
+	public Text txtTime;		// テキスト
+	public float maxTime;		// 最大時間
+	private float nowTime;      // 現在の時間
 	
 	//-------------------------------------------
 
@@ -55,12 +48,60 @@ public class GameManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        
-    }
+		// ゲームモードの設定（タイトル）
+        GameMode = MODE.TITLE;
+		nowTime = maxTime;
+		// 音関係の初期化
+	}
 
-    // Update is called once per frame
-    void Update()
+	//　ボタンを押した際の処理
+	void Selected()
+	{
+		switch (GameMode)
+		{
+			case MODE.TITLE:
+				GameMode = MODE.PLAYING;
+				nowTime = maxTime;
+				break;
+			case MODE.RESULT:
+				GameMode = MODE.RANKING;
+				break;
+			case MODE.RANKING:
+				GameMode = MODE.TITLE;
+				break;
+		}
+	}
+
+	// Update is called once per frame
+	void Update()
     {
-        
-    }
+		switch (GameMode)
+		{
+			// タイトル
+			case MODE.TITLE:
+				
+				break;
+
+			// ゲームプレイ中
+			case MODE.PLAYING:
+				nowTime -= Time.deltatime;
+
+				// 時間が無くなったらリザルト画面へ
+                if (nowTime < 0.0)
+                {
+					GameMode = MODE.RESULT;
+                }
+				break;
+
+			// リザルト
+			case MODE.RESULT:
+				
+				break;
+
+			// ランキング
+			case MODE.RANKING:
+				
+				break;
+		}
+	}
 }
