@@ -5,7 +5,9 @@ using UnityEngine;
 public class ProjectileAction : MonoBehaviour
 {
 	public string enemyTag = "Enemy";
+	public string environmentTag = "Environment";
 	public int damage;
+	public GameObject sparkVFX;
 
 	private void Start()
 	{
@@ -17,11 +19,12 @@ public class ProjectileAction : MonoBehaviour
 		{
 			HandleCollisionWithEnemy(collision.gameObject);
 		}
-		else if(collision.gameObject.CompareTag(enemyTag))
+		else if (collision.gameObject.CompareTag(environmentTag))
 		{
 			HandleCollisionWithEnvironment(collision.gameObject);
 		}
-
+		InstantiateSparkVFX();
+		Destroy(this);
 	}
 
 	void HandleCollisionWithEnemy(GameObject enemy)
@@ -44,5 +47,13 @@ public class ProjectileAction : MonoBehaviour
 	void HandleCollisionWithEnvironment(GameObject environemnt)
 	{
 		gameObject.SetActive(false);
+	}
+
+	void InstantiateSparkVFX()
+	{
+		if (!sparkVFX) return;
+
+		GameObject newSparkVFX = Instantiate(sparkVFX, transform.position, Quaternion.identity);
+		Destroy(newSparkVFX, 5.0f);
 	}
 }
