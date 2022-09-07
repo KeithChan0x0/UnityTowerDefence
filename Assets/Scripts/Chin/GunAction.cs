@@ -103,7 +103,7 @@ public class GunAction : MonoBehaviour {
         readyToShoot = false;
 
         // 当たりレイを作る
-        Ray ray = new Ray(attackPoint.position, -attackPoint.up);
+        Ray ray = new Ray(attackPoint.position, attackPoint.forward);
         //Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //　今カメラ画面の中心から
         RaycastHit hit;
 
