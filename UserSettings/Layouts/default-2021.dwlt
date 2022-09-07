@@ -8,114 +8,16 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 476
-    y: 633
-    width: 801
-    height: 417
-  m_ShowMode: 0
-  m_Title: Console
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 265
-    y: 51
-    width: 1647
-    height: 991
-  m_ShowMode: 4
-  m_Title: Hierarchy
-  m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 492}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 801
-    height: 417
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 801
-    height: 417
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 3878
---- !u!114 &5
-=======
-    x: 0
-=======
-    x: 6
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-    y: 51
-    width: 1906
-    height: 991
-=======
     x: 0
     y: 43
     width: 1920
     height: 1007
->>>>>>> 10f403c (weapon 2)
   m_ShowMode: 4
   m_Title: Game
   m_RootView: {fileID: 4}
@@ -123,7 +25,6 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
->>>>>>> e03fafa (バトル)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 638
-    width: 551
+    width: 417
     height: 319
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -166,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 888
+    x: 1022
     y: 0
-    width: 551
+    width: 417
     height: 957
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 293
+  controlID: 74
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,53 +88,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 6}
-  - {fileID: 7}
-  - {fileID: 8}
-=======
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
   - {fileID: 5}
   - {fileID: 7}
   - {fileID: 6}
->>>>>>> 10f403c (weapon 2)
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1647
-    height: 991
-=======
-    width: 1412
-    height: 1007
->>>>>>> e03fafa (バトル)
-=======
-    width: 1906
-    height: 991
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
     width: 1920
     height: 1007
->>>>>>> 10f403c (weapon 2)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
-<<<<<<< HEAD
---- !u!114 &6
-=======
 --- !u!114 &5
->>>>>>> 10f403c (weapon 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,28 +120,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1647
-=======
-    width: 1412
->>>>>>> e03fafa (バトル)
-=======
-    width: 1906
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
     width: 1920
->>>>>>> 10f403c (weapon 2)
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
-<<<<<<< HEAD
---- !u!114 &7
-=======
 --- !u!114 &6
->>>>>>> 10f403c (weapon 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,46 +134,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
-  - {fileID: 11}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-<<<<<<< HEAD
-    width: 1647
-    height: 941
-  m_MinSize: {x: 400, y: 200}
-  m_MaxSize: {x: 32384, y: 16192}
-  vertical: 0
-  controlID: 70
---- !u!114 &8
-=======
-    width: 1412
-    height: 957
-  m_MinSize: {x: 400, y: 200}
-  m_MaxSize: {x: 32384, y: 16192}
-  vertical: 0
-  controlID: 89
---- !u!114 &5
->>>>>>> e03fafa (バトル)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-=======
->>>>>>> 9e587b3 (弾道をバッグをなおす)
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -327,26 +141,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 971
-    width: 1647
-=======
-    y: 987
-    width: 1412
->>>>>>> e03fafa (バトル)
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
-=======
-    y: 971
-    width: 1906
-=======
     y: 987
     width: 1920
->>>>>>> 10f403c (weapon 2)
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -375,14 +171,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 4510
---- !u!114 &6
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-  controlID: 146
+  controlID: 68
 --- !u!114 &8
->>>>>>> 10f403c (weapon 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,46 +185,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 13}
-  - {fileID: 14}
-=======
-  - {fileID: 7}
-  - {fileID: 8}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
   - {fileID: 9}
   - {fileID: 10}
->>>>>>> 10f403c (weapon 2)
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 761
-    height: 941
+    width: 1022
+    height: 957
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 98
-=======
-    width: 653
-    height: 957
-=======
-    width: 882
-    height: 941
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    width: 888
-    height: 957
->>>>>>> 10f403c (weapon 2)
-  m_MinSize: {x: 100, y: 200}
-  m_MaxSize: {x: 8096, y: 16192}
-  vertical: 1
-  controlID: 147
+  controlID: 104
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,10 +214,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 888
-    height: 495
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 1022
+    height: 497
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -478,9 +240,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 495
-    width: 888
-    height: 462
+    y: 497
+    width: 1022
+    height: 460
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -488,56 +250,6 @@ MonoBehaviour:
   - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
->>>>>>> e03fafa (バトル)
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 761
-    y: 0
-<<<<<<< HEAD
-    width: 280
-    height: 941
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-=======
-    width: 653
-    height: 469
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
-=======
-    x: 1157
-    y: 0
-    width: 403
-    height: 941
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 12}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-  m_Panes:
-  - {fileID: 12}
->>>>>>> e03fafa (バトル)
-  m_Selected: 0
-  m_LastSelected: 0
-=======
->>>>>>> 10f403c (weapon 2)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -553,48 +265,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1041
-    y: 0
-    width: 237
-    height: 941
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 19}
-=======
-    x: 0
-    y: 469
-    width: 653
-    height: 488
-  m_MinSize: {x: 201, y: 221}
-=======
-    x: 1560
-    y: 0
-    width: 346
-    height: 941
-  m_MinSize: {x: 276, y: 71}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-  m_MaxSize: {x: 4001, y: 4021}
-=======
     x: 0
     y: 0
-    width: 551
+    width: 417
     height: 638
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
->>>>>>> 10f403c (weapon 2)
   m_ActualView: {fileID: 17}
   m_Panes:
-<<<<<<< HEAD
-  - {fileID: 16}
->>>>>>> e03fafa (バトル)
-=======
   - {fileID: 17}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
@@ -605,395 +284,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73
-    width: 887
-    height: 448
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: -2307451658381316129, guid: 9594a0add72dade48a1112e1949cfbc1, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.6003072
-      e01: 0
-      e02: 0
-      e03: 93.9684
-      e10: 0
-      e11: 0.6003072
-      e12: 0
-      e13: 210.9591
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 9594a0add72dade48a1112e1949cfbc1, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: -2307451658381316129, guid: 9594a0add72dade48a1112e1949cfbc1, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1278
-    y: 0
-    width: 369
-    height: 941
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 761
-    height: 461
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
-  m_Panes:
-  - {fileID: 21}
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 461
-    width: 761
-    height: 480
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 476
-    y: 633
-    width: 801
-    height: 396
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73
-    width: 887
-    height: 448
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: -2307451658381316129, guid: 0c181b61591482f4f9473fdf0514885c, type: 2}
-    - {fileID: -2307451658381316129, guid: 2f82372aee6de4849b295521ab2012b1, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.5391753
-      e01: 0
-      e02: 0
-      e03: -1.1752625
-      e10: 0
-      e11: 0.5391753
-      e12: 0
-      e13: 120.92783
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.42520326
-      e01: 0
-      e02: 0
-      e03: 112.79674
-      e10: 0
-      e11: 0.42520326
-      e12: 0
-      e13: 81.191055
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 2f82372aee6de4849b295521ab2012b1, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: -2307451658381316129, guid: 2f82372aee6de4849b295521ab2012b1, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 1026
-    y: 81
-    width: 278
-    height: 920
-=======
-    x: 653
-    y: 81
-    width: 333
-    height: 936
->>>>>>> e03fafa (バトル)
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 20fbffff2afbffff34fbffff36fbffff525b0000
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-=======
-      m_SelectedIDs: 7ead0100
-      m_LastClickedID: 109950
-      m_ExpandedIDs: 26a7feff74adfeff7aadfeff0ab4feffa2b4feffaeb4feff0cb5feffc2b8feff62bdfeffb6bdfeff44c1feff54c6feffa4c6feff96c8feff9acbfeffeecbfeff7ccffeffd0dafeff22dbfeffb4defeff8206ffffd606ffff640affffe02cffff342dfffff630ffff42a3ffff4aa3ffff64a3ffffc6a3ffff76a5ffff9ab900001aba0000f4ba00002ebb0000561d0100d61f0100542c0100ae2d0100162f0100842f01007c530100d65401003e560100ac560100347601008e770100f6780100aca90100
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: Bone002
-        m_OriginalName: Bone002
->>>>>>> e03fafa (バトル)
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-<<<<<<< HEAD
-        m_UserData: 0
-=======
-        m_UserData: -86672
->>>>>>> e03fafa (バトル)
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: ffb98da6b5c84f0439bba6041bf92bf0
-<<<<<<< HEAD
---- !u!114 &18
-=======
---- !u!114 &14
->>>>>>> e03fafa (バトル)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 1543
-    y: 81
-    width: 368
-    height: 920
-=======
-    x: 1156
-    y: 81
-    width: 255
-    height: 936
->>>>>>> e03fafa (バトル)
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_PreviewResizer:
-    m_CachedPref: -160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &19
-=======
---- !u!114 &15
->>>>>>> e03fafa (バトル)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-=======
->>>>>>> 9e587b3 (弾道をバッグをなおす)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -1032,31 +322,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1306
-    y: 81
-    width: 235
-    height: 920
-=======
-    x: 988
-    y: 81
-    width: 166
-    height: 936
->>>>>>> e03fafa (バトル)
-=======
-    x: 1163
-    y: 81
-    width: 401
-    height: 920
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    x: 888
+    x: 1022
     y: 711
-    width: 549
+    width: 415
     height: 298
->>>>>>> 10f403c (weapon 2)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1073,58 +342,37 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-<<<<<<< HEAD
-    m_Folders: []
-=======
     m_Folders:
-<<<<<<< HEAD
-    - Assets/EnemyAsset/TAZO_3D_C/Egg_Minions/eyeball
->>>>>>> e03fafa (バトル)
-=======
-    - Assets/Scripts/Chin
->>>>>>> 9e587b3 (弾道をバッグをなおす)
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Chin
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\cre\Desktop\aaa\UnityTowerDefence
+  m_LastProjectPath: C:\Users\cre\Downloads\UnityTowerDefence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: e4910000
-    m_LastClickedID: 37348
-    m_ExpandedIDs: 00000000b05c0000b25c0000b45c0000b65c0000b85c0000ba5c0000bc5c0000be5c0000c05c0000
-=======
-    m_SelectedIDs: ce5f0000
-    m_LastClickedID: 24526
-    m_ExpandedIDs: 00000000a65f0000a85f0000aa5f0000ac5f0000ae5f0000b65f0000b85f0000ba5f0000bc5f0000c25f0000c45f0000c85f0000826000008c6000008e600000dcae000000ca9a3bffffff7f
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    scrollPos: {x: 0, y: 250}
-    m_SelectedIDs: fcb10000
-    m_LastClickedID: 45564
-    m_ExpandedIDs: 00000000bcb10000c6b10000cab10000d0b100000eb2000030cd000036cd00003acd000018ff00001aff000000ca9a3bffffff7f
->>>>>>> 10f403c (weapon 2)
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 8c630000
+    m_LastClickedID: 25484
+    m_ExpandedIDs: 000000007063000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Projectile
-      m_OriginalName: Projectile
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 45574
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 
@@ -1135,66 +383,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 240}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: ffffffff00000000b05c0000b25c0000b45c0000b65c0000b85c0000ba5c0000bc5c0000be5c0000c05c0000225d0000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: ButtonAction
-      m_OriginalName: ButtonAction
-=======
-    m_ExpandedIDs: ffffffff000000002c860000829c0000829d0000c09d0000eeb6000016b7000018b700002eb700003ab700003cb700003eb7000040b7000042b7000056b7000062b7000064b7000066b700006ab700006eb7000012b8000046bd000048bd0000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
->>>>>>> e03fafa (バトル)
-=======
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs: ecae0000
     m_LastClickedID: 44780
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000070630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-<<<<<<< HEAD
-      m_Name: EnemyManager
-      m_OriginalName: EnemyManager
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
       m_Name: 
       m_OriginalName: 
->>>>>>> 10f403c (weapon 2)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_UserData: 25644
-=======
       m_UserData: 0
->>>>>>> e03fafa (バトル)
-=======
-      m_UserData: 5902
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-      m_UserData: 0
->>>>>>> 10f403c (weapon 2)
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 11}
-=======
       m_ClientGUIView: {fileID: 0}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1205,8 +413,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 00000000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 00000000a25f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1230,156 +438,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 49}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 115
-<<<<<<< HEAD
---- !u!114 &20
-=======
---- !u!114 &16
->>>>>>> e03fafa (バトル)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-<<<<<<< HEAD
-    x: 265
-    y: 542
-    width: 760
-    height: 459
-=======
-    x: 0
-    y: 550
-    width: 652
-    height: 467
->>>>>>> e03fafa (バトル)
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
-  m_TargetSize: {x: 760, y: 438}
-=======
-  m_TargetSize: {x: 652, y: 446}
->>>>>>> e03fafa (バトル)
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-<<<<<<< HEAD
-    m_HBaseRangeMin: -380
-    m_HBaseRangeMax: 380
-    m_VBaseRangeMin: -219
-    m_VBaseRangeMax: 219
-=======
-    m_HBaseRangeMin: -326
-    m_HBaseRangeMax: 326
-    m_VBaseRangeMin: -223
-    m_VBaseRangeMax: 223
->>>>>>> e03fafa (バトル)
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-<<<<<<< HEAD
-      width: 760
-      height: 438
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 380, y: 219}
-=======
-      width: 652
-      height: 446
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 326, y: 223}
->>>>>>> e03fafa (バトル)
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-<<<<<<< HEAD
-      x: -380
-      y: -219
-      width: 760
-      height: 438
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 760, y: 459}
-=======
-      x: -326
-      y: -223
-      width: 652
-      height: 446
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 652, y: 467}
->>>>>>> e03fafa (バトル)
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &21
-=======
---- !u!114 &17
->>>>>>> e03fafa (バトル)
-=======
-  m_DirectoriesAreaWidth: 289
---- !u!114 &13
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
   m_DirectoriesAreaWidth: 187
 --- !u!114 &14
->>>>>>> 10f403c (weapon 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1399,31 +462,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 265
-    y: 81
-    width: 760
-    height: 440
-=======
-    x: 0
-    y: 81
-    width: 652
-    height: 448
->>>>>>> e03fafa (バトル)
-=======
-    x: 6
-    y: 81
-    width: 881
-    height: 465
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
     x: 0
     y: 73
-    width: 887
-    height: 474
->>>>>>> 10f403c (weapon 2)
+    width: 1021
+    height: 476
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1625,27 +667,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -91.644424, y: 106.074066, z: -35.558685}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
-=======
-    m_Target: {x: 20.394623, y: 28.282677, z: 11.147588}
-    speed: 2
-    m_Value: {x: 20.394623, y: 28.282677, z: 11.147588}
->>>>>>> e03fafa (バトル)
-=======
-    m_Target: {x: 17.173443, y: 17.282066, z: 7.6882524}
-    speed: 2
-    m_Value: {x: 17.173443, y: 17.282066, z: 7.6882524}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    m_Target: {x: 16.972338, y: 18.104147, z: 7.1031256}
-    speed: 2
-    m_Value: {x: 16.972338, y: 18.104147, z: 7.1031256}
->>>>>>> 10f403c (weapon 2)
+    m_Value: {x: -91.644424, y: 106.074066, z: -35.558685}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1692,37 +716,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0.057324953, y: -0.83351845, z: 0.5424071, w: 0.088092}
     speed: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Value: {x: 0.56396586, y: 0.13738942, z: -0.09581971, w: 0.80863184}
+    m_Value: {x: 0.057324816, y: -0.8335165, z: 0.5424058, w: 0.08809179}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 714.8306
     speed: 2
-    m_Value: 12.124355
-=======
-    m_Value: {x: -0.040452484, y: 0.93694866, z: -0.32722247, w: -0.11582951}
-=======
-    m_Value: {x: 0.18612362, y: -0.41507483, z: 0.08716917, w: 0.8862689}
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
->>>>>>> 10f403c (weapon 2)
-  m_Size:
-    m_Target: 0.45627964
-    speed: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Value: 11.725
->>>>>>> e03fafa (バトル)
-=======
-    m_Value: 1.8061414
->>>>>>> 9e587b3 (弾道をバッグをなおす)
-=======
-    m_Value: 0.45627964
->>>>>>> 10f403c (weapon 2)
+    m_Value: 714.8306
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1832,9 +832,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 568
-    width: 887
-    height: 441
+    y: 570
+    width: 1021
+    height: 439
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1845,7 +845,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 887, y: 420}
+  m_TargetSize: {x: 1021, y: 418}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1860,17 +860,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -443.5
-    m_HBaseRangeMax: 443.5
-    m_VBaseRangeMin: -210
-    m_VBaseRangeMax: 210
+    m_HBaseRangeMin: -510.5
+    m_HBaseRangeMax: 510.5
+    m_VBaseRangeMin: -209
+    m_VBaseRangeMax: 209
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1881,23 +881,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 887
-      height: 420
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 443.5, y: 210}
+      width: 1021
+      height: 418
+    m_Scale: {x: 1.1592739, y: 1.1592739}
+    m_Translation: {x: 468.84988, y: 208.04436}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -443.5
-      y: -210
-      width: 887
-      height: 420
+      x: -404.4341
+      y: -179.46092
+      width: 880.72375
+      height: 360.57053
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 887, y: 441}
+  m_LastWindowPixelSize: {x: 1021, y: 439}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1923,9 +923,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 888
+    x: 1022
     y: 73
-    width: 549
+    width: 415
     height: 617
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1933,24 +933,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1084}
-      m_SelectedIDs: 787bfdff
-      m_LastClickedID: -165000
-      m_ExpandedIDs: 0618fdff0c18fdff68a0ffff8ab0ffffacb0ffff22b1ffffb8ac000062ad0000e6ad0000e2ae00001caf0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 76d90000
+      m_LastClickedID: 55670
+      m_ExpandedIDs: 86bfffffd8bfffff76c4ffff86cdffffd4cdffffd2d0ffff30d5ffff82d5ffff20daffffb6dfffff04e0ffff02e3ffff7eeaffffcceaffffcaedffffa4f1fffff6f1ffff30f7ffff34fbffff8c7b00000a7f00000491000032a5000040a5000050a5000066a7000082a90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: blasterN
-        m_OriginalName: blasterN
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -24472
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
