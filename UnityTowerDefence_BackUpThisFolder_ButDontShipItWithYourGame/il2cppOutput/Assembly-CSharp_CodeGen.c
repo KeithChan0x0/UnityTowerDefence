@@ -96,73 +96,77 @@ extern void EnemyEyeBall_Move_mE3C89AF7DDDDC5F8A73ED9F64EAD5B7A37563624 (void);
 extern void EnemyEyeBall_Damage_m4CFAA5D444BD8FCA18B2AA3FF54F6A1D88A3D063 (void);
 // 0x0000002A System.Void EnemyEyeBall::Update()
 extern void EnemyEyeBall_Update_m82B6FD8F96B1D037A940EC6D0034B766CA542ABA (void);
-// 0x0000002B System.Void EnemyEyeBall::.ctor()
+// 0x0000002B System.Void EnemyEyeBall::Attack()
+extern void EnemyEyeBall_Attack_m24F8E3C6CF69CB7DF88C44AD5BAD2C869DA558A7 (void);
+// 0x0000002C System.Void EnemyEyeBall::.ctor()
 extern void EnemyEyeBall__ctor_m6C98B9A5AC36A83172E0F7FC153029EEA04D566F (void);
-// 0x0000002C System.Void EnemyGround::Start()
+// 0x0000002D System.Void EnemyGround::Start()
 extern void EnemyGround_Start_mDB8A4DA2D95C0731B05DD7BD26287E025E7C4998 (void);
-// 0x0000002D System.Void EnemyGround::Update()
+// 0x0000002E System.Void EnemyGround::Update()
 extern void EnemyGround_Update_m10835535A2A4C2DB9134D4763F000645439D8285 (void);
-// 0x0000002E System.Void EnemyGround::.ctor()
+// 0x0000002F System.Void EnemyGround::.ctor()
 extern void EnemyGround__ctor_m1778525C439C6367F7214A86476B625EA02CFBA6 (void);
-// 0x0000002F System.Void EnemyManager::Start()
+// 0x00000030 System.Void EnemyManager::Start()
 extern void EnemyManager_Start_m4E898795C26B0B8E719BC5C822D09083411C2275 (void);
-// 0x00000030 System.Void EnemyManager::Update()
+// 0x00000031 System.Void EnemyManager::Update()
 extern void EnemyManager_Update_m1CCCCA84BC1BEE748F282D858ADA96C08D56F478 (void);
-// 0x00000031 System.Void EnemyManager::.ctor()
+// 0x00000032 System.Void EnemyManager::.ctor()
 extern void EnemyManager__ctor_m76040BEF87B84C8A36D79F1284F479ECE7B8D842 (void);
-// 0x00000032 System.Void EnemySky::Start()
+// 0x00000033 System.Void EnemySky::Start()
 extern void EnemySky_Start_m6E245C1AAE10EE15111440A3CEDD6B3EDF29EC2B (void);
-// 0x00000033 System.Void EnemySky::Update()
+// 0x00000034 System.Void EnemySky::Update()
 extern void EnemySky_Update_m82F66BE426007A36F46ED33A472BCF9B33EFC271 (void);
-// 0x00000034 System.Void EnemySky::.ctor()
+// 0x00000035 System.Void EnemySky::.ctor()
 extern void EnemySky__ctor_m97E6A0A486EEE696D1E55B97985E1EF84261879F (void);
-// 0x00000035 System.Void EnemySlime::Start()
+// 0x00000036 System.Void EnemySlime::Start()
 extern void EnemySlime_Start_mE265B2AF76427BD647FA398101A88654FB26BA33 (void);
-// 0x00000036 System.Void EnemySlime::Damage(System.Int32)
+// 0x00000037 System.Void EnemySlime::Damage(System.Int32)
 extern void EnemySlime_Damage_mC510F202260879F1610ACBE872BC467DEDAA232C (void);
-// 0x00000037 System.Void EnemySlime::Update()
+// 0x00000038 System.Void EnemySlime::Update()
 extern void EnemySlime_Update_m1B0FC05144BF939E471B8EB6E8A30AE5256B6F49 (void);
-// 0x00000038 System.Void EnemySlime::.ctor()
+// 0x00000039 System.Void EnemySlime::Attack()
+extern void EnemySlime_Attack_m3809E7DE7098EDBE778F0B3EF4B3BE12644F9402 (void);
+// 0x0000003A System.Void EnemySlime::.ctor()
 extern void EnemySlime__ctor_mA9F1B9BB3959EBF10F56980A59ECC19AD8FB9B90 (void);
-// 0x00000039 System.Void EnemyStoneMonster::Start()
+// 0x0000003B System.Void EnemyStoneMonster::Start()
 extern void EnemyStoneMonster_Start_m56387DCCCF8F7E6662BEB36A489CDC9E21129AFD (void);
-// 0x0000003A System.Void EnemyStoneMonster::Damage(System.Int32)
+// 0x0000003C System.Void EnemyStoneMonster::Damage(System.Int32)
 extern void EnemyStoneMonster_Damage_mDE2C89CED42BF7F8F3915E49BD9F581B85DD4F6C (void);
-// 0x0000003B System.Void EnemyStoneMonster::Update()
+// 0x0000003D System.Void EnemyStoneMonster::Update()
 extern void EnemyStoneMonster_Update_m68BE65687B2A643CE8BD0D1AEE0F277FEB292C29 (void);
-// 0x0000003C System.Void EnemyStoneMonster::.ctor()
+// 0x0000003E System.Void EnemyStoneMonster::.ctor()
 extern void EnemyStoneMonster__ctor_m21A2FD774414377C40D1440FE05EB62E824287D4 (void);
-// 0x0000003D System.Void GameManager::Start()
+// 0x0000003F System.Void GameManager::Start()
 extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
-// 0x0000003E System.Void GameManager::Selected()
+// 0x00000040 System.Void GameManager::Selected()
 extern void GameManager_Selected_mF74FA697919BEE3FD667C685796AC13F8A3296EA (void);
-// 0x0000003F System.Void GameManager::Update()
+// 0x00000041 System.Void GameManager::Update()
 extern void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (void);
-// 0x00000040 System.Void GameManager::.ctor()
+// 0x00000042 System.Void GameManager::.ctor()
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
-// 0x00000041 System.Void MouseAction::Update()
+// 0x00000043 System.Void MouseAction::Update()
 extern void MouseAction_Update_m1FED271FF9BC0587B82BD06EF82076AF16676044 (void);
-// 0x00000042 System.Void MouseAction::.ctor()
+// 0x00000044 System.Void MouseAction::.ctor()
 extern void MouseAction__ctor_m56ACB0B055285FB56D65F51414E01B997A1D4E4C (void);
-// 0x00000043 System.Void BigRookGames.Weapons.GunfireController::Start()
+// 0x00000045 System.Void BigRookGames.Weapons.GunfireController::Start()
 extern void GunfireController_Start_m4ACB92142D7A320C6C70BAF170565A0C9034B7E0 (void);
-// 0x00000044 System.Void BigRookGames.Weapons.GunfireController::Update()
+// 0x00000046 System.Void BigRookGames.Weapons.GunfireController::Update()
 extern void GunfireController_Update_m5FA988F3214D94235817AA6A45EDB999168017BD (void);
-// 0x00000045 System.Void BigRookGames.Weapons.GunfireController::FireWeapon()
+// 0x00000047 System.Void BigRookGames.Weapons.GunfireController::FireWeapon()
 extern void GunfireController_FireWeapon_m511FB3F9DD74275CDA1BDDEA72D2746FAE116C2D (void);
-// 0x00000046 System.Void BigRookGames.Weapons.GunfireController::ReEnableDisabledProjectile()
+// 0x00000048 System.Void BigRookGames.Weapons.GunfireController::ReEnableDisabledProjectile()
 extern void GunfireController_ReEnableDisabledProjectile_mD93A7D0B20D4CCFFC50E9769B3AE1A6142908AB4 (void);
-// 0x00000047 System.Void BigRookGames.Weapons.GunfireController::.ctor()
+// 0x00000049 System.Void BigRookGames.Weapons.GunfireController::.ctor()
 extern void GunfireController__ctor_m6F9ADFCBADCF2184EF96E49E9AC76B102FFC507D (void);
-// 0x00000048 System.Void BigRookGames.Weapons.ProjectileController::Update()
+// 0x0000004A System.Void BigRookGames.Weapons.ProjectileController::Update()
 extern void ProjectileController_Update_m15BB835BFFE35901C1961399FADE1F6A98198B44 (void);
-// 0x00000049 System.Void BigRookGames.Weapons.ProjectileController::OnCollisionEnter(UnityEngine.Collision)
+// 0x0000004B System.Void BigRookGames.Weapons.ProjectileController::OnCollisionEnter(UnityEngine.Collision)
 extern void ProjectileController_OnCollisionEnter_mB653FBABF0059736F464A1ACB0F2946BA2B75082 (void);
-// 0x0000004A System.Void BigRookGames.Weapons.ProjectileController::Explode()
+// 0x0000004C System.Void BigRookGames.Weapons.ProjectileController::Explode()
 extern void ProjectileController_Explode_mCD4D48845B7A59E84F781A1BD26419CE1C293F90 (void);
-// 0x0000004B System.Void BigRookGames.Weapons.ProjectileController::.ctor()
+// 0x0000004D System.Void BigRookGames.Weapons.ProjectileController::.ctor()
 extern void ProjectileController__ctor_mD5557E7531300646C0460F8787C1EECBF0682654 (void);
-static Il2CppMethodPointer s_methodPointers[75] = 
+static Il2CppMethodPointer s_methodPointers[77] = 
 {
 	ButtonAction_Start_m76078A6C63C21B34622608092F95204794FCE5B7,
 	ButtonAction_OnTriggerStay_mF4BDE07AF78B76895FDD54A42135E6A1338A5174,
@@ -206,6 +210,7 @@ static Il2CppMethodPointer s_methodPointers[75] =
 	EnemyEyeBall_Move_mE3C89AF7DDDDC5F8A73ED9F64EAD5B7A37563624,
 	EnemyEyeBall_Damage_m4CFAA5D444BD8FCA18B2AA3FF54F6A1D88A3D063,
 	EnemyEyeBall_Update_m82B6FD8F96B1D037A940EC6D0034B766CA542ABA,
+	EnemyEyeBall_Attack_m24F8E3C6CF69CB7DF88C44AD5BAD2C869DA558A7,
 	EnemyEyeBall__ctor_m6C98B9A5AC36A83172E0F7FC153029EEA04D566F,
 	EnemyGround_Start_mDB8A4DA2D95C0731B05DD7BD26287E025E7C4998,
 	EnemyGround_Update_m10835535A2A4C2DB9134D4763F000645439D8285,
@@ -219,6 +224,7 @@ static Il2CppMethodPointer s_methodPointers[75] =
 	EnemySlime_Start_mE265B2AF76427BD647FA398101A88654FB26BA33,
 	EnemySlime_Damage_mC510F202260879F1610ACBE872BC467DEDAA232C,
 	EnemySlime_Update_m1B0FC05144BF939E471B8EB6E8A30AE5256B6F49,
+	EnemySlime_Attack_m3809E7DE7098EDBE778F0B3EF4B3BE12644F9402,
 	EnemySlime__ctor_mA9F1B9BB3959EBF10F56980A59ECC19AD8FB9B90,
 	EnemyStoneMonster_Start_m56387DCCCF8F7E6662BEB36A489CDC9E21129AFD,
 	EnemyStoneMonster_Damage_mDE2C89CED42BF7F8F3915E49BD9F581B85DD4F6C,
@@ -240,7 +246,7 @@ static Il2CppMethodPointer s_methodPointers[75] =
 	ProjectileController_Explode_mCD4D48845B7A59E84F781A1BD26419CE1C293F90,
 	ProjectileController__ctor_mD5557E7531300646C0460F8787C1EECBF0682654,
 };
-static const int32_t s_InvokerIndices[75] = 
+static const int32_t s_InvokerIndices[77] = 
 {
 	3838,
 	3129,
@@ -295,7 +301,9 @@ static const int32_t s_InvokerIndices[75] =
 	3838,
 	3838,
 	3838,
+	3838,
 	3110,
+	3838,
 	3838,
 	3838,
 	3838,
@@ -322,7 +330,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	75,
+	77,
 	s_methodPointers,
 	0,
 	NULL,

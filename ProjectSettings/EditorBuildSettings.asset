@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleScene.0.unity
     guid: 52c002cbfa08e0349a0d1e37bef0cfd8
+  - enabled: 0
+    path: Assets/Scenes/EnemyTest.unity
+    guid: 68e4946315b6e7c45aef96b33544b0e2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0278aefa427deed40a561a32e289f00e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: eabe0fa3aea204f489458ed0923d2ff0, type: 2}
