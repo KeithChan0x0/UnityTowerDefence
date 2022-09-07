@@ -395,6 +395,7 @@ UnityEngine.GameObject::CompareTag
 UnityEngine.GameObject::get_activeInHierarchy
 UnityEngine.GameObject::get_activeSelf
 UnityEngine.GameObject::get_layer
+UnityEngine.GameObject::get_tag
 UnityEngine.GameObject::GetComponentFastPath
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
