@@ -6,6 +6,8 @@ public class EnemyBase : MonoBehaviour
 {
 	// 攻撃力
 	public int power;
+	// 攻撃のクールタイム
+	protected float m_attackCool;
 	// 体力
 	public int hp;
 	// 移動速度

@@ -91,6 +91,8 @@ public class GameManager : MonoBehaviour
                 {
 					GameMode = MODE.RESULT;
                 }
+				// 体力がなくなったらリザルトへ移行
+
 				break;
 
 			// リザルト

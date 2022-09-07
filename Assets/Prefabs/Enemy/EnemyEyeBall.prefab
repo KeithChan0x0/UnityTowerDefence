@@ -865,6 +865,9 @@ MonoBehaviour:
   power: 0
   hp: 0
   moveSpeed: 0
+  ballPrefab: {fileID: 5427702055360463597, guid: 08ea457d7f64cff48a0b57fd897aff2a, type: 3}
+  BallSpeed: 3
+  BallLife: 2
 --- !u!135 &2410390860380738646
 SphereCollider:
   m_ObjectHideFlags: 0

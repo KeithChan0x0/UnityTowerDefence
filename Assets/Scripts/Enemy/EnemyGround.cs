@@ -13,6 +13,7 @@ public class EnemyGround : EnemyBase
 	// Update is called once per frame
 	public virtual void Update()
     {
+		m_attackCool -= Time.deltaTime;
 		Move();
 	}
 }
