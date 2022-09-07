@@ -10,6 +10,13 @@ public class EnemyEyeBall : EnemySky
 	const float TARGET_LENGTH_AROUND = 3.0f;
 	// アニメーター
 	Animator animator;
+	// 攻撃のクールタイム（最大）
+	float ATTACK_COOL_MAX = 3.0f;
+	AudioSource myAudio; //自身の音源
+	public GameObject ballPrefab; //球プレハブ
+	//public AudioClip SeBall; //球射出音
+	public float BallSpeed = 3.0f; //球の速度
+	public float BallLife = 2.0f; //球の寿命
 
 	// Start is called before the first frame update
 	void Start()
@@ -44,5 +51,20 @@ public class EnemyEyeBall : EnemySky
 	public override void Update()
     {
 		base.Update();
+	}
+
+	// 攻撃処理
+	private void Attack()
+	{
+		// クールタイムが終わっていなければ何もしない
+		if (m_attackCool <= 0.0f) return;
+		// 攻撃のクールタイムが終わったら攻撃のアニメーション
+		animator.SetBool("Attack", true);
+		m_attackCool = ATTACK_COOL_MAX;
+		GameObject ball = Instantiate(ballPrefab); //レーザー生成
+		ball.transform.position = transform.position; //位置を補正
+		ball.GetComponent<Rigidbody>().velocity = Vector3.forward * BallSpeed; //速度を与える
+		Destroy(ball, BallLife); //寿命を与える
+		//myAudio.PlayOneShot(SeBall); //レーザー射出音鳴動
 	}
 }

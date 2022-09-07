@@ -10,6 +10,8 @@ public class EnemySlime : EnemyGround
 	const float TARGET_LENGTH_AROUND = 0.0f;
 	// アニメーター
 	Animator animator;
+	// 攻撃のクールタイム（最大）
+	float ATTACK_COOL_MAX = 2.0f;
 
 	// Start is called before the first frame update
 	void Start()
@@ -36,5 +38,16 @@ public class EnemySlime : EnemyGround
 	public override void Update()
     {
         base.Update();
+		Attack();
     }
+
+	// 攻撃処理
+	private void Attack()
+	{
+		// クールタイムが終わっていなければ何もしない
+		if(m_attackCool <= 0.0f) return;
+		// 攻撃のクールタイムが終わったら攻撃のアニメーション
+		animator.SetBool("Attack", true);
+		m_attackCool = ATTACK_COOL_MAX;
+	}
 }

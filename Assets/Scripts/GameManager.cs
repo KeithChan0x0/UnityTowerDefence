@@ -84,13 +84,15 @@ public class GameManager : MonoBehaviour
 
 			// ゲームプレイ中
 			case MODE.PLAYING:
-				nowTime -= Time.deltatime;
+				nowTime -= Time.deltaTime;
 
 				// 時間が無くなったらリザルト画面へ
                 if (nowTime < 0.0)
                 {
 					GameMode = MODE.RESULT;
                 }
+				// 体力がなくなったらリザルトへ移行
+
 				break;
 
 			// リザルト
