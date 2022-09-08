@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAction : MonoBehaviour
 {
@@ -10,11 +11,29 @@ public class PlayerAction : MonoBehaviour
 	Vector3 moveDirection;
 
 	private GunAction gunAction;
+
+	//====================
+	// UI
+	public Image imgHp;
+	public Text txtScore;
+	public Text txtTime;
+
+	public int MAX_HP = 100;
+	public int currentHp;
+
 	// Start is called before the first frame update
 	void Start()
 	{
 		//rb.GetComponent<Rigidbody>();
 		gunAction = GetComponentInChildren<GunAction>();
+
+		Ready();
+	}
+
+	void Ready()
+	{
+		currentHp = MAX_HP;
+		imgHp.fillAmount = 1.0f;
 	}
 
 	// Update is called once per frame
@@ -42,15 +61,14 @@ public class PlayerAction : MonoBehaviour
 		moveInputAxis.x = Input.GetAxis("Horizontal");
 		moveInputAxis.y = Input.GetAxis("Vertical");
 #else
-		moveInputAxis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
-		moveInputAxis = moveInputAxis * 2 / 1;
+        moveInputAxis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
+        moveInputAxis = moveInputAxis * 2 / 1;
 #endif
 		return moveInputAxis;
 	}
 
 	void HandleShooting()
 	{
-		
 
 	}
 

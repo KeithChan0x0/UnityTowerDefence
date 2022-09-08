@@ -589,6 +589,7 @@ MonoBehaviour:
   muzzleFlashPosition: {fileID: 0}
   isRightHandControl: 1
   allowInvoke: 1
+  imgBulletleft: {fileID: 0}
 --- !u!1 &114253957 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1069567032315564, guid: bdf8e7438a7816543998181bd3067573, type: 3}
@@ -3268,6 +3269,7 @@ MonoBehaviour:
   muzzleFlashPosition: {fileID: 0}
   isRightHandControl: 1
   allowInvoke: 1
+  imgBulletleft: {fileID: 0}
 --- !u!1 &530870325
 GameObject:
   m_ObjectHideFlags: 0
@@ -5468,6 +5470,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 884636636}
+  imgHp: {fileID: 1454035522}
+  txtScore: {fileID: 1871521807}
+  txtTime: {fileID: 1531954893}
+  MAX_HP: 100
+  currentHp: 0
 --- !u!1001 &908110639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5683,6 +5690,7 @@ MonoBehaviour:
   muzzleFlashPosition: {fileID: 928960149}
   isRightHandControl: 1
   allowInvoke: 1
+  imgBulletleft: {fileID: 0}
 --- !u!4 &928960149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3643882368892340087, guid: f26add0b8561051438426890f3bd0f19, type: 3}
@@ -7955,6 +7963,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 264414c28ea0fbb41b924fd17d9228b3, type: 3}
+--- !u!114 &1454035522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1428454235261780552, guid: 9e0987cbfdb5f6143849e6b26d80a4b0, type: 3}
+  m_PrefabInstance: {fileID: 779251159}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475580685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8293,6 +8312,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835789832631930, guid: bdf8e7438a7816543998181bd3067573, type: 3}
   m_PrefabInstance: {fileID: 1523412878}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1531954893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1428454236343450223, guid: 9e0987cbfdb5f6143849e6b26d80a4b0, type: 3}
+  m_PrefabInstance: {fileID: 779251159}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1536091899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9299,6 +9329,7 @@ MonoBehaviour:
   muzzleFlashPosition: {fileID: 0}
   isRightHandControl: 0
   allowInvoke: 1
+  imgBulletleft: {fileID: 0}
 --- !u!1001 &1718344754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10190,6 +10221,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 264414c28ea0fbb41b924fd17d9228b3, type: 3}
+--- !u!114 &1871521807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1428454236191474552, guid: 9e0987cbfdb5f6143849e6b26d80a4b0, type: 3}
+  m_PrefabInstance: {fileID: 779251159}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1872265506
 PrefabInstance:
   m_ObjectHideFlags: 0

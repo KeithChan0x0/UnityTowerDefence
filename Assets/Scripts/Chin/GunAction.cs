@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunAction : MonoBehaviour
 {
@@ -57,6 +58,10 @@ public class GunAction : MonoBehaviour
 	public bool isRightHandControl = true;
 	public bool allowInvoke = true;
 
+	// UI
+	[Header("UI")]
+	public Image imgBulletleft;
+
 	private void Awake()
 	{
 		bulletsLeft = magazineSize;
@@ -66,9 +71,7 @@ public class GunAction : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-#if UNITY_EDITOR
-		transform.localPosition = new Vector3(0.0f, -0.5f, 0.0f);
-#endif
+		//imgBulletleft = GameObject.Find("");
 	}
 
 	// Update is called once per frame
