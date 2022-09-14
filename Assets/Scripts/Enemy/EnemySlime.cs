@@ -14,8 +14,9 @@ public class EnemySlime : EnemyGround
 	float ATTACK_COOL_MAX = 2.0f;
 
 	// Start is called before the first frame update
-	void Start()
-    {
+	public override void Start()
+	{
+		base.Start();
 		TargetSet(TARGET_LENGTH_STANDARD, TARGET_LENGTH_AROUND);
 		animator = GetComponent<Animator>();
 	}
@@ -26,10 +27,11 @@ public class EnemySlime : EnemyGround
 		base.Damage(point_);
 		if (hp > 0)
 		{
-			animator.SetBool("Damage", true);
+			animator.SetTrigger("Damage");
 		}
 		else
 		{
+			navMeshAgent.enabled = false;
 			animator.SetBool("Death", true);
 		}
 
@@ -38,18 +40,18 @@ public class EnemySlime : EnemyGround
 
 	// Update is called once per frame
 	public override void Update()
-    {
-        base.Update();
-		Attack();
-    }
+	{
+		base.Update();
+		//Attack();
+	}
 
 	// 攻撃処理
-	private void Attack()
+	protected override void Attack()
 	{
 		// クールタイムが終わっていなければ何もしない
-		if(m_attackCool <= 0.0f) return;
+		if (m_attackCool >= 0.0f) return;
 		// 攻撃のクールタイムが終わったら攻撃のアニメーション
-		animator.SetBool("Attack", true);
+		animator.SetTrigger("Attack");
 		m_attackCool = ATTACK_COOL_MAX;
 	}
 }

@@ -15,7 +15,7 @@ public class EnemyAction : MonoBehaviour
 
 	public bool moveToTarget2 = false;
 	// Start is called before the first frame update
-	void Start()
+	public virtual void Start()
 	{
 		target2 = GameObject.FindGameObjectWithTag("Player");
 		navMeshAgent = GetComponent<NavMeshAgent>();

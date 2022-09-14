@@ -65,7 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTag: Enemy
   environmentTag: Environment
-  damage: 1
+  damage: 50
   sparkVFX: {fileID: 7655095426451682942, guid: 4d48b487f11e62940a978c7c0c0cbcb4, type: 3}
 --- !u!135 &678769481889535621
 SphereCollider:

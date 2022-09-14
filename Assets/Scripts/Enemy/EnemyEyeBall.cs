@@ -39,7 +39,7 @@ public class EnemyEyeBall : EnemySky
 		base.Damage(point_);
 		if (hp > 0)
 		{
-			animator.SetBool( "Damage", true);
+			animator.SetTrigger( "Damage");
 		}
 		else
 		{
@@ -59,7 +59,7 @@ public class EnemyEyeBall : EnemySky
 		// クールタイムが終わっていなければ何もしない
 		if (m_attackCool <= 0.0f) return;
 		// 攻撃のクールタイムが終わったら攻撃のアニメーション
-		animator.SetBool("Attack", true);
+		animator.SetTrigger("Attack");
 		m_attackCool = ATTACK_COOL_MAX;
 		GameObject ball = Instantiate(ballPrefab); //レーザー生成
 		ball.transform.position = transform.position; //位置を補正
