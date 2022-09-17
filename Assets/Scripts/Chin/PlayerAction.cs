@@ -11,10 +11,13 @@ public class PlayerAction : MonoBehaviour
 	Vector3 moveDirection;
 
 	private GunAction gunAction;
+	public GameObject currentGun;
 
 	//====================
 	// UI
 	public Image imgHp;
+	public Image imgBulletNum;
+
 	public Text txtScore;
 	public Text txtTime;
 
@@ -25,7 +28,8 @@ public class PlayerAction : MonoBehaviour
 	void Start()
 	{
 		//rb.GetComponent<Rigidbody>();
-		gunAction = GetComponentInChildren<GunAction>();
+		gunAction = currentGun.GetComponent<GunAction>();
+		//gunAction = GetComponentInChildren<GunAction>();
 
 		Ready();
 	}
@@ -34,12 +38,16 @@ public class PlayerAction : MonoBehaviour
 	{
 		currentHp = MAX_HP;
 		imgHp.fillAmount = 1.0f;
+		imgBulletNum.fillAmount = 1.0f;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
 		gunAction.HandleInput();
+		Debug.Log(currentHp / MAX_HP);
+		imgHp.fillAmount = (float)currentHp / MAX_HP;
+		imgBulletNum.fillAmount = gunAction.GetBulletPersent();
 	}
 
 	private void FixedUpdate()

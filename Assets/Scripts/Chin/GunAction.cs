@@ -226,4 +226,9 @@ public class GunAction : MonoBehaviour
 		bulletsLeft = magazineSize;
 		reloading = false;
 	}
+
+	public float GetBulletPersent()
+	{
+		return (float)bulletsLeft / magazineSize;
+	}
 }
